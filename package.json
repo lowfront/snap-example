@@ -1,0 +1,19 @@
+{
+  "name": "snap-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "element-mold": "0.0.2",
+    "esbuild": "^0.12.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "esbuild src/index.ts --bundle --watch --outfile=dist/index.js",
+    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js && cp public/index.html docs && cp -R dist/ docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
